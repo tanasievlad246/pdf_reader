@@ -25,16 +25,10 @@ for index in range(len(dfs)):
     if index == 0:
         new_header = combine_rows(frame.iloc[0], frame.iloc[1])
         print("new_header", new_header)
-        # frame.drop([0, 1], axis=0, inplace=True)
-        # frame.columns = new_header
-        # frame['Debitoare Creditoare'] = frame['Debitoare Creditoare'].astype(str)
-        # frame[['Debitoare', 'Creditoare']] = frame['Debitoare Creditoare'].str.split(' ', expand=True)
-    # If next dataframes column names start with "Cont", "Denumirea clientului"
     print(frame)
+
 
 # convert PDF into CSV
 tabula.convert_into("./saga.pdf", "output.csv", output_format="csv", pages='all')
 
-# convert all PDFs in a directory
-# tabula.convert_into_by_batch("input_directory", output_format='csv', pages='all')
 

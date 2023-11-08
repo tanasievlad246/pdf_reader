@@ -56,7 +56,6 @@ def process_list(input_list, columns_count):
 def process_keez(tables_flattened, renamed_columns):
     consolidated_df = pd.DataFrame(columns=renamed_columns)
     for table in tables_flattened:
-        # drop all None values from the sublists of table
         new_table = []
         for sublist in table:
             new_sublist = process_list(sublist, 12)

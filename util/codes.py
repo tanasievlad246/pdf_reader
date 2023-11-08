@@ -1,3 +1,0 @@
-LOCATION = 'us'
-PROJECT_ID = 'dandsltd-dev'
-PROCESSOR_ID = 'f71554b6d16a813f'
